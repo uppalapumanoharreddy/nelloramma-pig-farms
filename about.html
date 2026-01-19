@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Nelloramma Pig Farms</title>
+    <title>About Us - Nelloramma Pig Farms</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -86,14 +86,114 @@
             font-size: 16px;
         }
 
-        /* FOOTER */
-        footer {
-            background: #1b5e20;
-            color: white;
+        /* CARDS */
+        .service-card, .vision-card {
+            background: #fff;
+            border: 2px solid #8d6e63;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            padding: 22px;
-            margin-top: 60px;
+            flex: 1 1 300px;
+            max-width: 400px;
+            min-height: 200px;
+        }
+
+        .service-card:hover, .vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+            background: #e8f5e9;
+            border-color: #fbc02d;
+        }
+
+        .service-card h3, .vision-card h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .service-card p, .vision-card p {
             font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .vision-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* TIMELINE */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, #2e7d32, #fbc02d);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background: inherit;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background: white;
+            border: 4px solid #2e7d32;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -16px;
+        }
+
+        .timeline-content {
+            padding: 25px 30px;
+            background: #e8f5e9;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
         }
 
         /* MOBILE RESPONSIVE */
@@ -141,7 +241,7 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html">About Us</a>
     <a href="team.html">Team</a>
     <a href="community.html">Community</a>
     <a href="blogs.html">Blogs</a>
@@ -158,6 +258,86 @@
     <p>
         Our farm integrates modern technology with traditional farming wisdom to ensure the well-being of our pigs and the sustainability of our operations. We work closely with veterinarians, researchers, and local communities to promote best practices in pig farming.
     </p>
+</section>
+
+<section id="products-services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>🐖 Breeder Pig Farming</h3>
+            <p>Scientific management of high-quality breeders with a strong focus on genetics, health, and productivity.</p>
+        </div>
+        <div class="service-card">
+            <h3>🐷 High-Quality Piglet Production & Sales</h3>
+            <p>Supply of healthy, fast-growing piglets raised under ethical and biosecure farming practices.</p>
+        </div>
+        <div class="service-card">
+            <h3>🚚 Livestock Supply to Markets</h3>
+            <p>Reliable and consistent supply of pigs to local and regional livestock markets.</p>
+        </div>
+        <div class="service-card">
+            <h3>🤝 Farmer Collaborations & Partnerships</h3>
+            <p>Long-term collaboration with farmers through livestock supply, technical guidance, and shared growth opportunities.</p>
+        </div>
+        <div class="service-card">
+            <h3>🧬 Quality Genetics & Animal Welfare</h3>
+            <p>Emphasis on superior genetics, proper nutrition, disease prevention, and humane animal care.</p>
+        </div>
+        <div class="service-card">
+            <h3>🌱 Sustainable & Responsible Farming Practices</h3>
+            <p>Environment-friendly operations focused on sustainability, efficiency, and responsible resource use.</p>
+        </div>
+    </div>
+</section>
+
+<section id="timeline">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2022</h3>
+                <p>Conceptualized <em>Nelloramma Swine Farms</em> with a clear vision to promote ethical, scientific, and sustainable pig farming practices in India.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2023</h3>
+                <p>Launched a pilot breeder farm with <strong>10 breeder units</strong> to validate breeding performance, feed efficiency, disease management protocols, and local market acceptance.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2024</h3>
+                <p>Successfully scaled operations to <strong>25 breeder units</strong>, strengthened veterinary and feed management systems, and established a reliable market and farmer network.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2025 (Early)</h3>
+                <p>Expanded the core team with professionals in finance, engineering, and swine management; formally incorporated the venture as <strong>Nelloramma Swine Farms Private Limited</strong>.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>2025 (Phase I Expansion)</h3>
+                <p>Initiated development of a <strong>100-breeder integrated piggery project</strong> in <strong>Balangir District, Odisha</strong>, including breeder sheds, fattener sheds, and an in-house feed manufacturing unit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Mission and Vision">
+    <h2>Mission & Vision</h2>
+    <div class="vision-cards">
+        <div class="vision-card">
+            <h3>🎯 Mission</h3>
+            <p>To revolutionize pig farming in India through scientific breeding, ethical animal care, and sustainable practices, delivering high-quality livestock and fostering farmer partnerships.</p>
+        </div>
+        <div class="vision-card">
+            <h3>🔭 Vision</h3>
+            <p>To be a leading name in India's pig farming industry, known for innovation, quality, and commitment to animal welfare and environmental sustainability.</p>
+        </div>
+    </div>
 </section>
 
 <footer>
