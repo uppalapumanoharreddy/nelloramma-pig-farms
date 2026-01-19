@@ -16,7 +16,7 @@
 
         /* HEADER */
         header {
-            background: linear-gradient(135deg, #2e7d32, #fbc02d);
+            background: linear-gradient(135deg, #2e7d32, #4caf50, #fbc02d);
             color: white;
             padding: 20px 30px;
             display: flex;
@@ -67,24 +67,25 @@
 
         /* SECTIONS */
         section {
-            width: 85%;
+            width: 90%;
             margin: 40px auto;
-            background: white;
+            background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
             padding: 30px;
             border-radius: 14px;
             box-shadow: 0 6px 18px rgba(0,0,0,0.1);
         }
 
         h2 {
-            color: #2e7d32;
+            color: #1b5e20;
             border-left: 6px solid #fbc02d;
             padding-left: 12px;
-            font-size: 26px;
+            font-size: 28px;
         }
 
         h3 {
             color: #33691e;
             margin-top: 18px;
+            font-size: 22px;
         }
 
         p {
@@ -95,6 +96,7 @@
         /* CARDS */
         .service-card, .vision-card {
             background: #fff;
+            border: 2px solid #8d6e63;
             border-radius: 15px;
             padding: 25px;
             margin: 15px;
@@ -102,12 +104,15 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
             flex: 1 1 300px;
-            max-width: 350px;
+            max-width: 400px;
+            min-height: 200px;
         }
 
         .service-card:hover, .vision-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+            background: #e8f5e9;
+            border-color: #fbc02d;
         }
 
         .service-card h3, .vision-card h3 {
@@ -186,7 +191,7 @@
         }
 
         .timeline-content {
-            padding: 20px 30px;
+            padding: 25px 30px;
             background: #e8f5e9;
             position: relative;
             border-radius: 10px;
@@ -197,7 +202,7 @@
             color: #2e7d32;
             margin-bottom: 10px;
         }
-        }
+        
 
         /* FOOTER */
         footer {
@@ -231,12 +236,18 @@
             }
 
             section {
-                width: 92%;
-                padding: 22px;
+                width: 95%;
+                padding: 20px;
             }
 
             header h1 {
                 font-size: 26px;
+            }
+
+            .service-card, .vision-card {
+                margin: 10px;
+                padding: 20px;
+                min-height: 180px;
             }
 
             .gallery img {
@@ -345,8 +356,8 @@
 <section id="images">
     <h2>Our Farm</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-        <img src="main page.png" alt="Main view of Nelloramma Pig Farms" style="width: 100%; max-width: 500px; height: auto; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="piglet.png" alt="Healthy piglet at the farm" style="width: 100%; max-width: 400px; height: auto; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="main page.png" alt="Main view of Nelloramma Pig Farms" style="width: 100%; max-width: 500px; height: 250px; object-fit: cover; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="piglet.png" alt="Healthy piglet at the farm" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     </div>
 </section>
 
