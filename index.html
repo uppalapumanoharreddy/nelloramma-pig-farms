@@ -92,12 +92,26 @@
             font-size: 16px;
         }
 
-        /* TEAM */
-        .team-card {
-            background: #e8f5e9;
-            padding: 15px;
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
             border-radius: 10px;
-            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
         }
 
         /* FOOTER */
@@ -139,6 +153,11 @@
             header h1 {
                 font-size: 26px;
             }
+
+            .gallery img {
+                width: 45%;
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -162,13 +181,13 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Nelloramma Pig Farms focuses on ethical, sustainable, and scientific
-        pig farming practices with strong emphasis on animal welfare,
-        innovation, and rural development.
-    </p>
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="logo.png" alt="Nelloramma Pig Farms Logo">
+        <img src="main page.png" alt="Main view of the farm">
+        <img src="piglet.png" alt="Healthy piglet">
+    </div>
 </section>
 
 <section id="images">
