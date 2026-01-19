@@ -18,21 +18,23 @@
         header {
             background: linear-gradient(135deg, #fbc02d, #FFD700);
             padding: 20px 30px;
-            text-align: center;
+            display: flex;
+            align-items: center;
         }
 
         .logo {
             width: 250px;
             border: 3px solid #1b5e20;
             box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-            display: block;
-            margin: 0 auto 10px;
+            margin-right: auto;
         }
 
         .tagline {
+            flex: 1;
             font-size: 20px;
             font-weight: bold;
             color: #1b5e20;
+            text-align: center;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
             margin: 0;
         }
@@ -126,12 +128,20 @@
                 max-width: 100%;
             }
 
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
             .logo {
                 width: 200px;
+                margin-right: 0;
+                margin-bottom: 10px;
             }
 
             .tagline {
                 font-size: 16px;
+                flex: none;
             }
 
             nav a {
@@ -160,7 +170,7 @@
 
 <header>
     <img src="logo.png" alt="Nelloramma Pig Farms Logo" class="logo">
-    <p class="tagline">"Nurturing Pigs with Care, Nourishing Communities with Pride"</p>
+    <p class="tagline">“A responsible pig farming enterprise committed to animal welfare, quality, and sustainability.”</p>
 </header>
 
 <nav>
